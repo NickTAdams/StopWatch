@@ -25,7 +25,9 @@ const WatchFace = ({ time }) => {
   const seconds = Math.floor((time - minutesInMs) / 1000);
   const secondsInMs = seconds * 1000;
   const hundredths = Math.floor((time - minutesInMs - secondsInMs) / 10);
-  const displayTime = `${addZero(minutes)}:${addZero(seconds)}:${addZero(hundredths)}`;
+  let displayTime = minutes < 100 
+    ? `${addZero(minutes)}:${addZero(seconds)}:${addZero(hundredths)}`
+    : 'MAX';
 
   return (
     <StyledWatchFace>
