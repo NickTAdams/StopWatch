@@ -1,8 +1,16 @@
 import StopWatchContainer from './components/StopWatchContainer';
+import WatchFace from './components/WatchFace';
+import { StyledButtonRow, StyledButton } from './components/Button';
 
-function App() {
+const App = () => {
   return (
-    <StopWatchContainer />
+    <StopWatchContainer>
+      <WatchFace />
+      <StyledButtonRow>
+        <StyledButton>Reset</StyledButton>
+        <StyledButton>Start</StyledButton>
+      </StyledButtonRow>
+    </StopWatchContainer>
   );
 }
 
