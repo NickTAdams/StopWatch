@@ -1,19 +1,19 @@
 import styled from 'styled-components';
 
-const StyledButton = styled.button`
+const Button = styled.button`
   width: 40%;
   border: 2px solid black;
   border-radius: 25px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
 `;
 
-const StyledButtonRow = styled.div`
+const ButtonRow = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex: 1 1 auto;
 `;
 
-export { StyledButton, StyledButtonRow };
+export { Button, ButtonRow };
