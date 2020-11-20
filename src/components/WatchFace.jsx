@@ -3,9 +3,9 @@ import styled from 'styled-components';
 const StyledWatchFace = styled.h1`
   width: 100%;
   margin: 0;
+  background-color: lime;
   border: 2px solid black;
   border-radius: 25px;
-  background-color: lime;
   text-align: center;
   font-family: 'VT323', sans-serif;
   font-size: 50px;
